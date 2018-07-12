@@ -1,0 +1,253 @@
+ /* @import "../../lib/weui.wxss"; */
+ view{font-size: 14px;}
+ view{
+  font-size: 12px;
+}
+.body{
+  background: #eee
+}
+.keyword{
+  border-radius: 5px 0 0 5px;
+}
+radio {
+  transform:scale(0.8);
+
+}
+checkbox {
+  transform:scale(0.8);
+}
+.search-com{
+  margin: 2% 2%;
+  width: 96%;
+  line-height: 32px;
+  height: 32px;
+  display: flex;
+  
+}
+.search-com input{
+  padding:0 10px;
+  width: 80%;
+  height: 32px;
+  background: #fff;
+  border: 1px solid #1BAE8D;
+  border-radius: 5px 0 0 5px;
+}
+.search-com button{
+  display: inline-block;
+  height: 34px;
+  line-height:34px;
+  background:#1BAE8D;
+  color:#fff;
+  width:20%;
+  border-radius:0 3px 3px 0;
+  font-size:12px;
+  text-align: center;
+}
+.companylist{
+  padding: 2% 3%;
+  background: #fff;
+  margin-top: 5px;
+}
+.conditions{
+  margin-top: 8px;
+  padding: 2% 2%;
+  background: #fff;
+}
+.conditions .title{
+  margin-bottom: 10px;
+  margin-top:10px; 
+  padding: 0 2%;
+}
+
+.conditions .title text{
+  background: #1BAE8D;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px 5px;
+
+}
+.conditions radio-group{
+  padding:0 2%;
+}
+
+.conditions label{
+  /* margin-right: 1%; */
+   /* width: 45%;  */
+  display: inline-block;
+}
+.register-nav{
+  text-align: center;
+  padding: 10px;
+  color:cadetblue;
+}
+.section-submit{
+  margin: 20px 0;
+  width: 100%;
+  
+}
+ .btn-bg{
+  width:60%;
+  margin: 0 auto;
+  height: 34px;
+  line-height:34px;
+  background:#1BAE8D;
+  color:#fff;
+  border-radius:5px;
+  font-size:14px;
+  text-align: center;
+ }
+.register {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-top: 8px;
+  padding: 40rpx 20rpx 20rpx 20rpx;
+  background: #fff;
+}
+.register .page-section{
+  width: 95%;
+  margin-bottom: 35rpx;
+  border-bottom:1px solid #ddd; 
+}
+
+textarea{
+  height: 80px;
+}
+.page-section-last{
+  padding-bottom: 20px;
+}
+textarea,input{
+  font-size: 14px;
+}
+.btn_reg{
+  background-color:#009688;
+  color:aliceblue;
+  width:80%;
+  margin:0 auto;
+  font-size: 14px;
+}
+.login_forget{
+  margin-top:20rpx;
+  text-align: center;
+  color:aliceblue;
+}
+.login_forget .btn_login{
+  float: left;
+  width:100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin-right: 2%;
+  border-radius: 10rpx;
+  background-color:#ff9933;
+
+}
+checkbox-group{
+  display: inline-block;
+  width:50%;
+
+}
+checkbox-group .checkbox{
+  margin-right: 12px;
+  display: inline-block;
+  /* width:50%;  */
+}
+.weui-cell_input checkbox-group {
+    display: block;
+    width: 100%;
+}
+.weui-cell_input checkbox-group .checkbox{
+  width: auto;
+}
+.weui-cell_input text{
+  background:#1BAE8D;
+  color:#fff;
+  border-radius:5px;
+  padding:2px 5px;
+  width: 20%;
+  display: block;
+  margin-bottom: 5px;
+}
+.getcode {
+  display: flex;
+}
+.getcode .weui-cell_input{
+  width: 100%;
+}
+.getcode input{
+  display: inline-block;
+  width: 68%;
+}
+.code{
+  display: inline-block;
+  height: 30px;
+  line-height:30px;
+  background:#1BAE8D;
+  color:#fff;
+  width:30%;
+  border-radius:3px 3px 3px 3px;
+  font-size:12px;
+  text-align: center;
+  padding: 0;
+}
+.previmg{
+  text-align:center;
+}
+.previmg image{
+  width: 100px;
+  height: 100px;
+  margin:0 atuo;
+}
+.panel-default{
+  background: #fff;
+  padding: 2% 2%;
+  width: 96%;
+  
+}
+.question{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.question text{
+
+  font-size: 14px;
+  color:#1BAE8D;
+}
+.goods-list:first-child{
+  text-align: center;
+}
+.wxParse-a {
+  color: #999 !important;
+   display: flex !important;
+}
+.wxParse-li{
+  border-bottom:1px solid #ddd !important;
+  border-radius:5px; 
+  margin:10px 0;
+}
+.wxParse-li-circle{
+  display: none;
+}
+wxParse-li-inner:first-child{
+  display: none;
+}
+.wxParse-span{
+  color:#ed3807 !important;
+}
+.wxParse-li-inner:nth-child(2){
+  width: 98% !important;
+}
+.wxParse-li:first-child{
+   width: 100% !important;
+}
+.wxParse-a{
+  width: 100% !important;
+}
+.displaynone{
+  display: none;
+ 
+}
+.display{
+ background: #ed3807;
+}

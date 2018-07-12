@@ -1,0 +1,9 @@
+<view class="body">
+  <view class='logo'><image src='https://www.zhixiaobing.com/Template/pc/default/Static/api/index-logo.png'></image></view>
+  <view class='start'>
+      <view class='start1' bindtap='next'><text>开始评测</text></view>
+      <view class='start2' bindtap='calling'><text>电话咨询</text></view>
+      <!-- <view class='start3' bindtap='bootTap'><text>介绍</text></view> -->
+  </view>
+
+</view>

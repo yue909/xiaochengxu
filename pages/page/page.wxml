@@ -1,0 +1,4 @@
+<!--pages/index/index.wxml-->
+<view class='body'>
+<web-view src="https://mp.weixin.qq.com/s/KXp1S_aS0sHpgGeN5TvOCg"></web-view>
+</view>

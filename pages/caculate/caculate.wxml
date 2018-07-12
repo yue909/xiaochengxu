@@ -1,0 +1,100 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class='body'>
+  <!-- <view class="top-title" ><text class="">项目评测</text></view> -->
+
+  <view class="search" >
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class='search-com'>
+        <input type='text' name="keyword"  placeholder="{{placeholder}}" placeholder-style="font-size:12px;" value='{{keyword}}' bindinput='bindKeyInput'/>
+        <button  style="" class="btn btn-sm"  value="搜索" bindtap='search' >搜索</button >
+      </view>
+
+      <block wx:for="{{companylist}}" >
+        <view class='companylist' data-id="{{item.id}}" data-name="{{item.Name}}" bindtap='putinput'>
+          <text class=''>{{item.Name}}</text>
+        </view>
+      </block>
+
+      <block wx:for="{{conditions}}" wx:key='index'>
+      <view class='condition{{index+1}} conditions'>
+          <view class='title'><text>{{index+1}}、{{item.name}}</text></view>
+      
+          <block wx:if="{{index==7 || index==10}}">
+          <checkbox-group bindchange="checkboxChange" name="condition{{index+1}}">
+              <label class="checkbox" wx:for="{{item.cate}}" wx:for-item="items">
+                <checkbox value="{{items.id}}" checked="" />  <text class=''>{{items.name}}</text>
+              </label>
+            </checkbox-group>
+           </block>
+
+          <block wx:elif="{{index==9 || index==4}}">
+          <radio-group class="radio-group" bindchange="radioChange" name="condition{{index+1}}">
+            <label class="radio" wx:for="{{item.cate}}" wx:for-item="items">
+                <radio value="{{items.id}}" checked="" /><text class=''>{{items.name}}</text>
+            </label>
+          </radio-group>
+            
+           </block>
+
+          <block wx:else>
+          <radio-group class="radio-group" bindchange="radioChange" name="condition{{index+1}}">
+            <label class="radio" wx:for="{{item.cate}}" wx:for-item="items">
+              <block wx:if="{{items.default}}">
+                <radio value="{{items.default}}" checked="" /> <text class=''>{{items.name}}</text>
+              </block>
+              <block wx:else>
+                <radio value="{{items.id}}" checked="" /><text class=''>{{items.name}}</text>
+              </block>
+            </label>
+          </radio-group>
+            
+           </block>
+      </view>
+      </block>
+        
+
+       <view class='check_patent conditions'>
+          <view class='title'><text>12、知识产权</text></view>
+          <checkbox-group bindchange="checkboxChange" name="check_patent">
+            <label class="checkbox"  wx:for="{{condition12}}"><checkbox value="{{item}}" checked='checked' value='on' />
+            {{item}}
+            </label>  
+          </checkbox-group>
+          <textarea name="patent_count" value='15'></textarea>
+        </view>
+
+         <!-- <view class='check_patent conditions'>
+          <view class='title'><text>13、手机号</text></view>
+            <input name="lnktel" placeholder-style="font-size:12px;" value='{{keyword}}' bindinput='bindKeyphone' />
+          <textarea name="patent_count" value='15'></textarea>
+        </view> -->
+
+
+    <view class='section-submit'>
+      <button  style="" class="btn btn-bg"  value="评测" form-type='submit'>开始评测</button >
+    </view>
+
+    </form>
+    <!-- <block wx:if="{{companyerror}}">
+      <view class='companyerror'><text class=''>{{companyerror}}</text></view>
+    </block> -->
+
+    
+  </view>
+   <view class="panel panel-default {{mode}}" id="content" bindtap='bookTap'>  
+  </view>
+
+   <scroll-view class="panel panel-default" id="{{contents}}{{display}}"  scroll-y='false'>  
+      <view bindtap='bookTap'>
+        <template is="wxParse" data
+        ="{{wxParseData:objectList.nodes}}"/>
+      </view>
+      <view class='clearfix'></view>
+      <view bindtap='previewImage' class='previmg'>
+        <image src='https://wx.zhixiaobing.com/Template/pc/default/Static/api/kefu.jpg'></image>
+      </view>
+      <view class='question' bindtap='calling'>详细请咨询:<text>400-990-2996</text></view>
+      <view class='button' bindtap='close'>确定</view>
+   </scroll-view>
+</view>

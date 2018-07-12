@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/form/form",
+    "pages/caculate/caculate",
+    "pages/page/page"
+  ],
+  
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "imgs/toolbar/home.png",
+        "selectedIconPath": "imgs/toolbar/home@selected.png",
+        "text": "主页"
+      },
+     
+      {
+        "pagePath": "pages/page/page",
+        "iconPath": "imgs/toolbar/my.png",
+        "selectedIconPath": "imgs/toolbar/my@selected.png",
+        "text": "介绍"
+      }
+    ],
+    "backgroundColor": "#F5F5F5",
+    "selectedColor": "#1BAE8D",
+    "color": "#989898",
+    "borderStyle": "white",
+    "position": "bottom"
+  },
+  "window": {
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "#FFFFFF",
+    "navigationBarBackgroundColor": "#1BAE8D",
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug": true
+}
